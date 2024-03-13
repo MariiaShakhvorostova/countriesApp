@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Where in the world?</h1>
+      <button class="toggle">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </button>
+    </div>
+    <div class="container">
+      <div class="form-control">
+        <input
+        id="search-input"
+          type="text"
+          placeholder="Search for a country..."
+          class="search"
+        />
+        <i class="fas fa-search search"></i>
+      </div>
+      <div class="dropDownCon">
+        <div class="dropDown">
+          <p class="sBtn-text" id="commonreg">Region</p>
+          <button>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="drop showDropDown">
+          <ul class="options">
+            <li class="option"><p class="region">All</p></li>
+            <li class="option"><p class="region">Africa</p></li>
+            <li class="option"><p class="region">Americas</p></li>
+            <li class="option"><p class="region">Asia</p></li>
+            <li class="option"><p class="region">Europe</p></li>
+            <li class="option"><p class="region">Oceania</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="countries"></div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="filter.js"></script>
+    <script type="module" src="render.js"></script>
+    <script type="module" src="event.js"></script>
+  </body>
+</html>
